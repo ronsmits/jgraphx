@@ -10,8 +10,8 @@
 
   <properties>
   
-   <maven.compiler.source>1.5</maven.compiler.source>
-   <maven.compiler.target>1.5</maven.compiler.target>
+   <maven.compiler.source>1.8</maven.compiler.source>
+   <maven.compiler.target>1.8</maven.compiler.target>
    <maven.compiler.compilerVersion>1.5</maven.compiler.compilerVersion>
    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -55,6 +55,14 @@
 				<instructions>
 					<Bundle-Vendor>see https://github.com/jgraph/jgraphx)</Bundle-Vendor>
 				</instructions>
+			</configuration>
+		</plugin>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
 			</configuration>
 		</plugin>
   	</plugins>
